@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    LIU Yinuo
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<meta name="author" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="http://github.com/onelyn/onelyn.github.io.git/styles/main.css" />
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="/assets/media/css/style.min.css" />
+        <script src="/assets/media/script/tocbot.min.js"></script>
+        <script src="/assets/media/script/script.min.js"></script>
+        <script src="/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="http://github.com/onelyn/onelyn.github.io.git">
+                    LIU Yinuo
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        首页
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1647484136189" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="http://github.com/onelyn/onelyn.github.io.git">
+                            LIU Yinuo
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1647484136189" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            首页
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                Paper - Empathy || Empathy: A Motivated Account
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            LIU Yinuo
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2020-06-19</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">19.1
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">3085</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="http://github.com/onelyn/onelyn.github.io.git/tag/jG_o9cXEY/">empathy</a>
+                                
+                                <a href="http://github.com/onelyn/onelyn.github.io.git/tag/HcCMZ9jG8/">paper</a>
+                                
+                            </span>
+                                            
+                                    </div>
+                                    
+                        </header>
+                        
+                        <div class="post-content">
+                            <p>Empathy features a tension between automaticity and context dependency.</p>
+<ul>
+<li>people often take on each other's internal stated reflexively and outside of awareness.</li>
+<li>empathy shifts with characteristics of empathizers and situations.</li>
+</ul>
+<p>the key role of <em>motivation</em> in driving people to avoid or approach engagement with other's emotions.</p>
+<ul>
+<li>avoid: suffering, material costs, interference with competition</li>
+<li>approach: positive affect, affiliation联合, social desirability</li>
+</ul>
+<p><strong>Although empathy <em>can be</em> automatic, by no means is it <em>always</em> automatic.</strong></p>
+<p>It is also deeply context dependent and varies along with numerous situational features.</p>
+<h2 id="automaticity-and-context-dependency-in-empathy">Automaticity and Context Dependency in Empathy</h2>
+<h3 id="components-of-empathy">Components of Empathy</h3>
+<p>Many definition share important features, including the idea that empathy is not unitary but rather encompasses multiple subcomponents.</p>
+<ul>
+<li>experience sharing (observer tend to take on the sensory, motor, visceral, and affective states they encounter in targets)</li>
+<li>mentalizing (draw explicit inferences推论 about targets' intentions, beliefs, and emotions)</li>
+</ul>
+<p>experience sharing and mentalizing often compete.</p>
+<p>eg. false-belief tasks: observers reason about a target's inaccurate representations of the world, require observers to mentalized about states that they do not share with targets.</p>
+<p>but they both predict downstream interpersonal outcomes, including observers' accuracy for targets' internal states and their motivation to help targets.</p>
+<ul>
+<li>mind perception (detection of targets' internal states)</li>
+</ul>
+<p>the deployment of mind perception is context dependent</p>
+<p>Motives affect all three empathic processes.</p>
+<h3 id="automaticity-as-a-theme-in-empathy-research">Automaticity as a Theme in Empathy Research</h3>
+<ul>
+<li>Early:</li>
+</ul>
+<p>fellow feeling - when we see a stroke aimed and just ready to fall on the leg or arm of another person, we naturally shrink back our own leg or our own arm - empathy operates at an automatic and even nonconscious level.</p>
+<p>not by analogy or top-down reasoning based on observers' own past experience, but that observers share and comprehend immediately and simultaneously with perception.</p>
+<p><em>In the fist decade of the 20th century Titchener translated einfuhlung into empathy.</em></p>
+<p>Titchener: ideomotor观念运动 action - mental representations are scaffolded支撑 by embodied percepts - kinesthetic动觉的 imagery supports empathy &quot;I feel or act them in the mind's muscle&quot;</p>
+<ul>
+<li>Contemporary:</li>
+</ul>
+<p>Conceptual knowledge, including visual imagery and linguistic concepts, are grounded in sensorimotor representations. Action and perception are represented through common coding. Observers' representations of their own and targets' actions overlap automatically.</p>
+<ul>
+<li>Developmental:</li>
+</ul>
+<p>Early-arising experience sharing is the ontological本体论的 beginnings of empathy -&gt; highlight the primitive nature of vicarious替身的 experience.</p>
+<p>eg. newborns cry in response to other infants' cries and mimic their mothers' affective expressions.</p>
+<ul>
+<li>Ethology动物行为学:</li>
+</ul>
+<p>Experience sharing is an evolutionarily preserved mechanism. Several nonhuman species appear to also have impressive abilities to mentalize about conspecifics同种个体.</p>
+<ul>
+<li>Social:</li>
+</ul>
+<p>automatically mimic and synchronize - emotional contagion传染</p>
+<p>Many forms of mimicry meet central criteria for automatic processing - fast, outside of awareness, task independent - a lack of top-down control</p>
+<ul>
+<li>Neuroscience:</li>
+</ul>
+<p>neural resonance - patterns of activation consistent with experiencing those states themselves.</p>
+<p>mirror neurons</p>
+<p>&quot;implicit, automatic, and unconscious process of embodies simulation&quot;</p>
+<p><strong>So they all view empathy and experience sharing in particular as automatic.</strong> This approach, which rests on an impressive amount of data, holds that experience sharing is an evolutionarily preserved, early-developing mechanism that matches an observer's state to a target's state rapidly and often irrepressibly.</p>
+<h3 id="context-effects-on-empathy">Context effects on empathy</h3>
+<p>Observers do not <em>always</em> empathize automatically -&gt; context dependent</p>
+<ul>
+<li>intergroup conflict: group boundaries not only decrease the deployment of empathic processes but also render empathy less automatic; reduce neural resonance in response to outgroup</li>
+<li>expertise: medical professionals frequently encounter others in profound physical and emotional pain</li>
+</ul>
+<p><strong>Although empathy can be automatic, it is not always automatic.</strong> Features of observers' situations, experiences, and relationships to targets systematically alter the experience of empathy.</p>
+<h2 id="foundations-and-structure-of-a-motivated-model">Foundations and Structure of a Motivated Model</h2>
+<p>empathy -&gt; motivated phenomenon</p>
+<p>approach motives &amp;&amp; avoidance motives (toward actions) ;  affective motives (toward emotions)</p>
+<p>People will sometimes approach even negative emotions that are consistent with their goals. (anger prior to a conflict, sadness prior to seeking help)</p>
+<p>avoid: pain, costs, interference with competition</p>
+<p>approach: positive affect, affiliation, desirability</p>
+<h3 id="ultimate-sources-of-empathic-motives">Ultimate sources of empathic motives</h3>
+<p>behavior can be explained at the connected but distinct level of ultimate sources that render a behavior evolutionarily adaptive or proximate motives that drive individual organisms to engage in that behavior in the moment</p>
+<p>motives to avoid/approach others' emotions likely emerged from selection pressures associated with social life.</p>
+<ul>
+<li>offspring care: familial relationships promote strong instinct to understand and share others' emotions</li>
+<li>ingroup identification: cooperation requires trust and reciprocity between group members; emotions such as gratitude and guilt likely motivate cooperation with ingroup members; sensitive to the coalitional结合的 value -&gt; empathy for ingroup members is also adaptive</li>
+<li>outgroup exclusion: arise from direct competition between groups for limited resources</li>
+</ul>
+<h3 id="proximate-mechanisms-supporting-empathic-motives">Proximate mechanisms supporting empathic motives</h3>
+<p>how do motives affect empathy:</p>
+<ul>
+<li>information processing: motives bias info processing in a number of ways;</li>
+<li>emotion modulation: individuals experience motives to experience or avoid particular affective states, including empathy; emotion regulation encompasses a suite of goal-driven strategies;</li>
+</ul>
+<p>prior to info processing and regulatory strategies to alter empathy, two general point about goals and regulation:</p>
+<ul>
+<li>goals and strategies need not be explicit: eg. implicitly priming goals for cooperation, achievement, impression formation and memorization all facilitate goal-relevant behavior outside of awareness; habitual emotion-regulation tendencies in the absence of any task instruction</li>
+<li>regulation can alter emotions as they unfold: regulation not only follows the experience of emotion, not only modulate emotions that have already occurred; regulatory strategies can alter the entire process of emotion experience; change the way they currently feel &amp;&amp; change the way they interpret emotion-relevant info &amp;&amp; avoid or approach that info (basis: emotions reflects individuals' interpretation of lower level states such as valence and arousal)</li>
+</ul>
+<p>manifest表现: reduction or intensification of empathy || prevention, initiation, or modulation of the initial experience of empathy</p>
+<h3 id="empathic-regulatory-strategies">Empathic Regulatory Strategies</h3>
+<ul>
+<li>situation selection: regulation often precedes, as opposed to follows, emotion generation; observers often make choices about empathic engagement <em>before</em> being exposed to targets; observers choose to put themselves in, or take themselves out of empathy's way; exposure control</li>
+<li>attention modulation: up- or down-regulate empathy by shifting their attention toward or away from affective cues</li>
+<li>appraisal: modulate their appraisal of targets' emotional cues; first, observers might shift their beliefs about the intensity of targets' affective states(conclude that targets have misrepresented their affect); observers can decide whether or not a target is responsible for his/her emotions; decide that targets deserve them; decide that the target's suffering is a good thing(zero-sum competition, under which one person's misfortune is tied to another's gain); schadenfreude(enjoyment of others' suffering) and gluckschmerz(unhappy at others' good fortune)</li>
+</ul>
+<h2 id="evidence-for-motivated-empathy">Evidence for Motivated Empathy</h2>
+<p>6 motive * 3 strategy grid</p>
+<h3 id="avoiding-pain">Avoiding Pain</h3>
+<ul>
+<li>theory: experience sharing often exerts an affective cost in that targets' suffering simply makes observers feel bad.</li>
+<li>evidence: about observers implement motives to avoid pain by reducing empathy.
+<ul>
+<li>situation selection: observers who believe empathy will hurt tend to select themselves out of empathy-inducing situations. Personal distress: the negative affect observers feel when in the presence of target suffering.</li>
+<li>attention modulation: observers who expect empathy to be painful also shift their attention away from targets' states. Expectations of exhaustion predicted observers' tendency to dehumanize targets by denying them complex internal states.</li>
+<li>appraisal: observers who wish to avoid pain might also appraise target emotions differently to make them more manageable.</li>
+</ul>
+</li>
+</ul>
+<p>A richer literature suggests that observers avoid pain by reappraising targets as deserving of their misfortune, thus protecting observers' belief in the world as orderly and fair. This strategy appears most common when targets' suffering could most impact observers.</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5Clyn%5CDesktop%5CQQ%E6%88%AA%E5%9B%BE20200626120053.png" alt="QQ截图20200626120053" loading="lazy"></figure>
+<h3 id="avoiding-cost">Avoiding cost</h3>
+<ul>
+<li>theory: empathy can produce material cost. Once observers have empathized with a target, helping (even when it is costly) may be the least costly option observers have at their disposal.</li>
+<li>evidence:
+<ul>
+<li>situation selection: Tell observers they would or would not have later opportunities to donate to a homeless person and then giving observers a choice between listening to an empathy-inducing or neutral appeal from that target. Observers in the costly condition were more likely to avoid empathy-inducing appeals.</li>
+<li>attention modulation: no direct evidence that costs shift attention away from target affect but indirect phenomena. Identifiable victim effect, more likely to report empathy and donate money toward single victims of tragedy than toward larger numbers of less identified victims.</li>
+<li>appraisal: no direct work; system justification(indirect evidence); in the face of economically disadvantaged targets, observers often endorse system-justifying ideologies such as &quot;rags to riches&quot; themes emphasizing individual control over their outcomes, or the belief that the poor are especially happy.</li>
+</ul>
+</li>
+</ul>
+<h3 id="avoiding-interference干扰-with-competition">Avoiding interference干扰 with competition</h3>
+<ul>
+<li>theory: empathy can be detrimental有害的 when it interferes with intergroup competition. A linebacker who shared the pain of players he tackles, might do his job poorly. Partially driven by a sense of competition. In many cases, group membership itself creates such competition when individuals perceive their own group as superior to others. However, bolstering ingroup identity need not always produce outgroup derogation, implying that zero-sum competition should act above and beyond group identity in motivating empathy avoidance.</li>
+<li>evidence:
+<ul>
+<li>situation selection: black and white people, outgroup and ingroup</li>
+<li>attention modulation: dehumanization and infrahumanization ,or the denial of complex internal states to outgroup members. De- and infra-humanization can be thought of as circumscribed reductions in mind perception through which perceivers fail to weigh evidence that outgroup targets experience secondary emotions such as hope and jealousy or uniquely human internal states (mind perception servers as a precursor to mentalizing and experience sharing). Dehumanization indeed appears to produce inattention to outgroup targets' minds. But implicit - images of objectified women reduce accuracy and speed in identifying words associated with humanness. Situations like ingroup violence toward an outgroup and so on. The medial PFC (associated with mentalizing) is engaged when observers attend to most social targets but not to targets from derogated outgroup.</li>
+<li>appraisal: consistent with moral disengagement theory, holding that individuals justify harming targets by minimizing the amount of suffering they believe targets experience and derogating targets as deserving of this suffering. Thus reappraising their suffering as just. Under competition, observers often appraise targets' suffering positively and even enjoy target misfortune (Counter-empathy).</li>
+</ul>
+</li>
+</ul>
+<p>This need not always be the case. Sometimes &quot;keep your friends close but your enemies closer&quot;. Some competitive interactions might require observers to engage mentalizing but not experience sharing, thus understanding their competitors' states without vicariously sharing them.</p>
+<h3 id="approaching-capitalization">Approaching capitalization</h3>
+<ul>
+<li>theory: observers emotionally benefit from sharing targets' positive states. Targets' positive experiences should serve as attractor states, motivating people to approach and affectively capitalize on empathy's benefits through positive empathy.</li>
+<li>evidence:
+<ul>
+<li>situation selection: first, positive affect attracts people; interactions with happy, targets will be more rewarding; target positivity draws observers in. second, observers appear especially pone to prosociality when they believe their good deeds will offer opportunities to capitalize on targets' positive emotion. capitalization drives prosociality.</li>
+<li>attention modulation: Individuals who are motivated to feel positively do focus on others' positive cues. People were selectively inaccurate about social targets' negative but not positive affect. A motivation to feel positively might drive observers' attention toward positive social cues with which they can empathize.</li>
+<li>appraisal: the belief in a just world motivates observers to view targets who experience good fortune and positive affect as deserving of their fate. Judging targets as deserving of positive outcomes allows observers to intensify their empathy and capitalize on targets' positive affect.</li>
+</ul>
+</li>
+</ul>
+<h3 id="approaching-affiliation从属">Approaching affiliation从属</h3>
+<ul>
+<li>theory: Anytime an observer chooses to engage with a distressed friend or family member, he/she voluntarily subjects him/her to negative affect. People seek empathy even when it is painful, provided that such empathy allows them to approach affiliation and strengthen social bonds. Observers motivated to connect with others might not deliberately empathize but rather experience empathy as a side effect of seeking contact with targets -&gt; observers often strive for social connection by engaging more deeply with targets' internal states.</li>
+<li>evidence:
+<ul>
+<li>situation selection: even socially excluded, observer will also prefer to be complete task with others.</li>
+<li>attention modulation: first, attention to and mimicry of social targets fluctuate变动 alongside observers' need for social contact, consistent with a need for engagement with others; decreasing social connection by rejecting observers increases their mimicry of targets and their accuracy about social targets' thought and feelings; satiating social need (eg. think about close friends) increases subsequent dehumanization of outgroup targets. Second, observers' belief that they can affiliate with targets intensifies empathic behavior. Work on outcome dependency, or observers' beliefs that they will continue working or share outcomes with a social target; Finally, observers attend more to desirable affiliation partners.</li>
+<li>appraisal: although observers who are fatigued tend to find targets' affective displays inappropriate, this effect disappears when observers expect to interact with targets afterward. observers induced to feel isolated find targets to be friendlier and more sociable.</li>
+</ul>
+</li>
+</ul>
+<h3 id="approaching-desirability">Approaching desirability</h3>
+<ul>
+<li>theory: even when empathizing affords neither good feelings nor opportunities to connect with others, it can benefit observers through its desirability. People tend to view empathy as a positive trait and further tend to view themselves as reliably above average on many desirable traits. Desirability refers to two related but distinct phenomena: first, empathy might be personally desirable or consistent with observers' own values; second even if individuals do not value empathy themselves, they may understand it is a socially desirable trait favored by others.</li>
+<li>evidence:
+<ul>
+<li>situation selection: no direct work</li>
+<li>attention modulation: attention to target cues; mostly social norms; women are more empathic then men (when they believe such tasks tap skills associated with female gender roles and are thus motivated to do well) - stereotype life (which individuals from groups associated with superior performance do better); gender effects were eliminated when participants were paid for their performance.</li>
+<li>appraisal: observers reminded of their past empathic failures donated more time and money to distressed targets after  reminding, consistent with a desire to compensate for past failures by engaging empathically</li>
+</ul>
+</li>
+</ul>
+<h2 id="implications-of-a-motivated-model">Implications of a Motivated Model</h2>
+<p>empathy can be experienced as automatic while also varying fundamentally as a function of context.</p>
+<p>implication: for basic theories of empathy; for understanding psychiatric illnesses that feature reductions in empathy; for advancing empathy-building intervention science and so on.</p>
+<h3 id="implications-for-basic-theory">Implications for basic theory</h3>
+<ul>
+<li>connections with existing theoretical models: a motivated model extends contributions</li>
+<li>motivation and automaticity: empathic processes are best understood as reflecting dense, bidirectional interactions between motivations and automatic affective reactions. Motives can &quot;tune&quot; social and affective processes even if those processes begin as relatively stable and automatic. Motives can alter (over a long time course) the characteristics of observers' automatic responses to targets (eg. physician) Motives and regulatory strategies not only operate on emotions that have already been experienced but also alter the initial generation of emotion in many cases.</li>
+<li>self- versus other-oriented motives: People are also driven by their desire to benefit or harm social targets. Sometimes observers must reduce their empathy for a target's current emotion in order to benefit them in the longer term, thus enacting an other-oriented empathic avoidance motive. Batson: observers help others because they experience powerful other-oriented concern for targets' well-being(empathic concern) as opposed to self-oriented negative affect(personal distress). Another - compassion: approach-oriented state, does not necessitate that observers feel emotions, is subjectively associated with positive, can be thought of as observers <em>feeling for</em> without <em>feeling as</em> those targets.</li>
+<li>empathy's (dis)utility: empathy represents a faulty source of moral judgments and prosocial behavior. Emotional responses to targets often produce indefensible decisions, such as helping individual more than groups and favoring similar versus dissimilar targets. Individual high in trait empathy are most likely to exhibit affective biases in their moral decision making. Argue: to the extent that empathy is automatic and uncontrollable, it can't serve as a reliable guide for moral decision making, but if empathy is at least partially under observers' motivational control, then observers should be able to guide their empathic responses so as to maximally benefit others. Empathy should not be the only source of moral decision making.</li>
+</ul>
+<h3 id="implications-for-understanding-and-treating-psychiatric-disorders">Implications for understanding and treating psychiatric disorders</h3>
+<p>Individual suffering from theses illnesses might be incapable of properly deploying mentalizing or experience sharing. And a motivated model of empathy suggests that they might be characterized by atypical reductions in motives to think about or share social target's states.</p>
+<ul>
+<li>autism: as opposed to reflecting inabilities to understand or share others' emotions, ASD might be characterized by reduced motivation to engage empathically. reduced responses to cues and stimuli. But when they are motivated to process social cues, their social cognitive acuity should come to approximate whose of typically developing individuals.</li>
+<li>psychopathy: can mentalize but fail to share targets' experiences and thus engage in callous and antisocial behavior. reduced prosociality when observers interacted with strangers but not when interacting with ingroup.</li>
+</ul>
+<p>represent decreased empathic approach motives or increased empathic avoidance motives.</p>
+<h3 id="implications-for-interventions">Implications for interventions</h3>
+<p><strong>Empathy might be flexible.</strong>  -&gt; decrease/increase</p>
+<p>How could one intervene to increase empathy:</p>
+<ul>
+<li>perspective-taking exercises</li>
+<li>long-term interventions typically targeted toward specialized populations such as physicians, focusing on explicit training in mentalizing (eg. teach perceivers associations between target facial expressions and emotions)</li>
+<li>compassion meditation</li>
+<li>immersion in narratives沉浸叙事 (eg. reading fictions)</li>
+</ul>
+<p>All reflect dominant theoretical models of empathy.</p>
+<p>But also they all exhibit critical limitations. eg. perspective taking: when in conflict or competition, serve the other hand; mentalizing training: effects are local.</p>
+<p>As for motivation-based interventions:</p>
+<p><em>increase observers' motivation to engage empathically</em></p>
+<p>such as social influence, cognitive dissonance induction, values affirmation.</p>
+<p>final way to decrease empathic avoidance: changing observers' beliefs about empathy.</p>
+<p>Ironically, evidence favoring empathy's automaticity might also suggest that it is stable and unchangeable. This mirrors the entity实质 mindset.</p>
+<p>By contrast, promoting the belief that : empathy is often challenging but empathic abilities are not fixed (rather malleable) might reduce empathy avoidance, especially when empathy is most difficult.</p>
+<p>Inducing a malleable theory of empathy increased observers' willingness to spend time listening to and outgroup members' emotional story and to engage in empathy even when it promised to be painful.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>People often experience empathy as unavoidable and automatic, but empathy is also powerfully context dependent, waxing and waning as a function of both personal and situational factors. Empathy has a motivated nature. Motives guide our willingness to empathize and shape the structure of empathic responding.</p>
+
+                        </div>
+                        
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://github.com/onelyn/onelyn.github.io.git/post/paper-empathy-or-empathy-a-motivated-account/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://github.com/onelyn/onelyn.github.io.git/post/paper-empathy-or-empathy-a-motivated-account/&sharesource=qzone&title=Paper - Empathy || Empathy: A Motivated Account&pics=http://github.com/onelyn/onelyn.github.io.git/images/avatar.png?v=1647484136189&summary="><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=http://github.com/onelyn/onelyn.github.io.git/post/paper-empathy-or-empathy-a-motivated-account/&sharesource=weibo&title=Paper - Empathy || Empathy: A Motivated Account + " - " + &pic="http://github.com/onelyn/onelyn.github.io.git/images/avatar.png?v=1647484136189 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="http://github.com/onelyn/onelyn.github.io.git/tag/jG_o9cXEY/">#
+                    empathy
+                        </a>
+                        
+                        <a href="http://github.com/onelyn/onelyn.github.io.git/tag/HcCMZ9jG8/">#
+                    paper
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                            
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        @LLLyn
+                            
+                                    <div style="width:300px;margin:0 auto; padding:0px 0;">
+                                        <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                                            <img src="https://yanxuan.nosdn.127.net/b610ced5ac6a0e25cf6edf5606c69775.png" style="float:left;">
+                                            <p id="icpinfo" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;"></p>
+                                        </a>
+                                    </div>
+                                    
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        LIU Yinuo &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="" target="_blank">
+                                                
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    var icp = document.getElementById('icpinfo');
+                    icp.innerText = "";
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1647484136189);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>
